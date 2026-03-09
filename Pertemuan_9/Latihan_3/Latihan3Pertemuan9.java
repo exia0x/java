@@ -1,0 +1,35 @@
+/*
+NIM : D1041241044
+NAMA : Juven Lawrinsen
+Program untuk menghitung luas dan keliling persegi dari sisinya menggunakan konsep OOP
+*/
+class Persegi{
+    int sisi;
+    int luas;
+    int keliling;
+
+    public void hitungLuas(){
+        luas = sisi*sisi;
+    } 
+
+    public void hitungKeliling(){
+        keliling = sisi*4;
+    }
+
+    void tampilkanHasil(){
+        System.out.println("=== PERSEGI ===");
+        System.out.println("Sisi : " + sisi + " cm");
+        System.out.println("Luas : " + luas + " cm²");
+        System.out.println("Keliling : " + keliling + " cm");
+    }
+}  
+
+public class Latihan3Pertemuan9 {
+    public static void main(String[] args) { 
+        Persegi persegi1 = new Persegi();
+        persegi1.sisi = 5;
+        persegi1.hitungLuas();
+        persegi1.hitungKeliling();
+        persegi1.tampilkanHasil();
+    }    
+}
